@@ -2,9 +2,6 @@
 <?php
 require_once "db.php";
 
-// Include your student header only after handling redirects.
-// Make sure the login page sets $_SESSION["student_id"].
-
 if (empty($_SESSION["student_id"])) {
     exit("Please log in as a student first.");
 }
