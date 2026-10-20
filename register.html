@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register Page</title>
+</head>
+<body class="bg-gradient-primary">
+    <header>
+        <div class="logo">
+            <img src="GraduateIcon.png" alt="Graduation Icon">
+            <h1>UniHELP</h1>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="login.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="h4 text-gray-900 mb-4">Create Your Account</h1>
+            <p style="font-size: 90%;color: blue;">Enter your details below to register for UniHELP</p>
+        </div>
+
+        <form class="user" action="register.php" method="POST">
+            <div class="form-group" style="display:flex;align-items: center;">
+                <label for="StudentID" 
+                    style="width: 140px; ">
+                    Student ID: </label>
+                <input type="text" id="StudentID"
+                name="student_id"
+                class="form-control"
+                placeholder="E260112"
+                style="width: 250px;"
+                required>
+            </div>
+            <div class="form-group mb-3" style="display:flex;align-items: center;">
+                <label for="fName" style="width: 140px;font-weight: bold; font-size: 18px;">
+                    Full Name: </label>
+                <input type="text" id="fName"
+                name="full_name"
+                class="form-control"
+                placeholder="Jayden Tan"
+                style="width: 250px;"
+                required>
+            </div>
+            <div class="form-group mb-3" style="display:flex;align-items: center;">
+                <label for="EMAIL" style="width: 140px; font-weight: bold; font-size: 18px;">
+                    Email: </label>
+                <input type="email" id="EMAIL"
+                name="email"
+                class="form-control form-control-user"
+                placeholder="E260112@helplive.edu.my"
+                style="width: 250px;"
+                required>
+            </div>
+            <div class="form-group mb-3" style="display:flex;align-items: center;">
+                <label for="CONTACTNO" style="width: 140px; font-weight: bold; font-size: 18px;">
+                    Contact No: </label>
+                <input type="contactNo" id="CONTACTNO"
+                name="contactNo"
+                class="form-control form-control-user"
+                placeholder="0123456789"
+                style="width: 250px;"
+                required>
+            </div>    
+            <div class="form-group mb-3" style="display:flex;align-items: center;">
+                <label for="PASSWORD" style="width: 140px; font-weight: bold; font-size: 18px;">
+                    Password:</label>
+                <input type="password" id="PASSWORD"
+                name="password"
+                class="form-control form-control-user"
+                placeholder="********"
+                style="width: 250px;"
+                required>
+            </div>     
+            <div class="form-group mb-3" style="display:flex;align-items: center;">
+                <label for="2Password" style="width: 140px; font-weight: bold; font-size: 18px;">
+                    Confirm Password: </label>
+                <input type="confirmPassword" id="2Password"
+                name="confirmPassword"
+                class="form-control form-control-user"
+                placeholder="********"
+                style="width: 250px;"
+                required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-user btn-block">Register</button>
+        </form>
+        <div class="text-center">
+            <a class="small" href="login.html">Already have an account? Login</a>
+        </div>
+    </div>
+
+    <hr>
+    <footer>
+        CopyRight®UniHelp System 2026
+    </footer>
+    
+</body>
+</html>

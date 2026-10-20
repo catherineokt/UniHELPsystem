@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verify-OTP Page</title>
+</head>
+<body class="bg-gradient-primary">
+    <header>
+        <div class="logo">
+            <img src="GraduateIcon.png" alt="Graduation Icon">
+            <h1>UniHELP</h1>
+        </div>
+        <nav class="menu" id="menu">
+            <a href="login.html">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="text-center">
+            <h1 class="h4 text-gray-900 mb-3">Enter Verification OTP</h1>
+            <p>A One-Time Password(OTP) has been sent to your registered email 
+                [Example: e260112@helplive.edu.my].Please enter the code below to 
+                verify your account.</p>
+        </div>
+        <form class="user" action="verifyOTP.php" method="POST">
+            <div class="form-group">
+                <input type="text" id="OTP"
+                name="otp"
+                class="form-control form-control-user"
+                placeholder="6-digit code"
+                required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-user btn-block">Submit</button>
+            <button type="submit" class="btn btn-primary btn-user btn-block">Resend Code</button>
+        </form>
+    </div>
+    <hr>
+    <footer>
+        CopyRight®UniHelp System 2026
+    </footer>
+</body>
+</html>
