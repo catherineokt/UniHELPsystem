@@ -1,5 +1,7 @@
 <?php 
 require_once "db.php";
+// Temporary testing only:
+$_SESSION["student_id"] = "BDA001";
 
 include "stuheader.php";
 if(empty($_SESSION["student_id"])){
