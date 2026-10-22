@@ -1,6 +1,7 @@
 <?php
 // Handles: Cancel / Reschedule (student + volunteer) and Mark Completed (volunteer only)
 session_start();
+require_once "db.php";
 
 const TEST_MODE = true; // set to false once login.php sets $_SESSION['student_id'] / ['volunteer_id']
  
