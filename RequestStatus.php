@@ -2,7 +2,7 @@
 session_start();
 require_once "db.php";
 
-include "stuheader.php";
+
 if(empty($_SESSION["volunteer_id"])){
     exit("Please log in as a student first.");
 }
