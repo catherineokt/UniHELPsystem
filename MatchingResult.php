@@ -1,7 +1,6 @@
 <?php 
 require_once "db.php";
 
-include "stuheader.php";
 if(empty($_SESSION["student_id"])){
     exit("Please log in as student first.");
 }
